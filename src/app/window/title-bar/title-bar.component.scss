@@ -1,0 +1,88 @@
+.title-bar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background: #1D1B20;
+    -webkit-app-region: drag;
+    align-items: middle;
+    vertical-align: middle;
+    z-index: 7;
+}
+
+.app-title {
+    position: absolute;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app-icon {
+    position: absolute;
+    background-image: url("../../../assets/icons/favicon.512x512.png");
+    background-size: 100% 100%;
+    top: 50%;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    transform: translate(0, -50%);
+}
+
+
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 40px;
+    cursor: pointer;
+    transition-delay: 0.2s ease-in-out;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-app-region: no-drag;
+
+}
+
+.icon:hover {
+    background-color: #26242B;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.icon:active {
+    background-color: #1E1C21;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.close_icon {
+    background: url("../../../assets/images/icon_close.png") no-repeat center center;
+    background-size: 9px 9px;
+
+}
+
+.minimize_icon {
+    background: url("../../../assets/images/icon_minimize.png") no-repeat center center;
+    background-size: 15px 15px;
+    right: 130px;
+}
+
+.maximize_icon {
+    background: url("../../../assets/images/icon_maximize.png") no-repeat center center;
+    background-size: 15px 15px;
+    right: 65px;
+}

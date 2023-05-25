@@ -1,0 +1,116 @@
+:host {}
+
+.container {
+    background: #212121;
+    background: url("../../assets/wallpaper-red.jpg") no-repeat center center;
+    background-size: 100% 100%;
+
+}
+
+.sideImage {
+
+    overflow: hidden;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+
+    z-index: 0;
+    overflow: hidden;
+    background: #212121;
+    transform: translate(-50%, 0);
+}
+
+.leftImage::before {}
+
+.labelTitle {
+    position: absolute;
+    color: #D0BCFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    height: 36px;
+    left: calc(50% - 70px/2);
+    top: 82px;
+
+}
+
+.loginTextField {
+    background-color: red;
+}
+
+.loginInput {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #6750A4;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    padding: 6px;
+}
+
+.loginInput::placeholder {
+    color: #4A4458;
+}
+
+.user {
+    left: 340px;
+    top: 190px;
+}
+
+.password {
+    left: 340px;
+    top: 240px;
+
+}
+
+input:focus {
+    width: 180px;
+    left: 320px;
+}
+
+.loginInput:focus-visible {
+    outline: 1px solid #6750A4;
+}
+
+.sendButton {
+    position: absolute;
+    width: 106px;
+    height: 28px;
+    left: calc(50% - 106px/2 + 0.5px);
+    top: 310px;
+    background-color: #6750A4;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.sendButton:hover {
+    background-color: #9865d3;
+    transition: 0.2s ease-in-out;
+}
+
+.sendButton:active {
+    background-color: #4e3784;
+    transition: 0.2s ease-in-out;
+}
+
+.sendButton:focus {
+    outline: 1px solid #fff;
+}

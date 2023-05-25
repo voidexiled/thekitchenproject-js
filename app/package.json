@@ -1,0 +1,14 @@
+{
+  "name": "angular-electron",
+  "description": "Angular Electron sample",
+  "author": {
+    "name": "Jalomo",
+    "email": "maxime.gris@gmail.com"
+  },
+  "version": "12.0.1",
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+    "custom-electron-titlebar": "4.2.3"
+  }
+}
