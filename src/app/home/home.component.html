@@ -1,7 +1,15 @@
+<!-- <app-left-menu></app-left-menu> -->
 <div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+    <div class="leftMenu" id="leftMenu" [style.width]="leftMenuStyles.width">
+        <div class="button">
+            <i [style.transform]="leftMenuStyles.transform"></i>
+        </div>
+        
+    </div>
+    <div class="rightMenu" id="rightMenu">
+        <i></i>
+    </div>
+    <a routerLink="/">Volver a Login</a>
 
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+
 </div>
