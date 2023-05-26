@@ -8,6 +8,9 @@ import { TitleBarComponent } from './title-bar.component';
   declarations: [],
   imports: [
     CommonModule
+  ],
+  exports: [
+
   ]
 })
 export class TitleBarModule { }

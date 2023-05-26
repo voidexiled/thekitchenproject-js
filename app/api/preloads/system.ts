@@ -28,3 +28,11 @@ export function minimizeWindow() {
 export function maximizeWindow() {
     ipcRenderer.invoke('system:maximizeWindow');
 }
+
+export function resizeWindowToHome() {
+    ipcRenderer.invoke('system:resizeWindowToHome');
+}
+
+export function resizeWindowToLogin() {
+    ipcRenderer.invoke('system:resizeWindowToLogin');
+}

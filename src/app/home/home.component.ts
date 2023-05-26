@@ -12,12 +12,16 @@ export class HomeComponent implements OnInit {
     rotation: 0,
   }
   leftMenuStyles = {
-    width: "40px",
+    width: "2.5em",
     transform: "rotate(" + this.vars.rotation + "deg)",
   };
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+
+  }
 
   ngOnInit(): void {
+
+
     console.log('HomeComponent INIT');
     this.configureLeftMenu();
     this.configureRightMenu();
@@ -36,6 +40,7 @@ export class HomeComponent implements OnInit {
   }
 
   logout(): void {
+    window.electronAPI.system.resizeWindowToLogin();
     this.router.navigate(['/login']);
   }
 
@@ -60,11 +65,11 @@ export class HomeComponent implements OnInit {
       }
       this.vars.rotation += 180;
       if (!this.leftMenuToggled) {
-        this.leftMenuStyles.width = "330px";
+        this.leftMenuStyles.width = "40%";
         this.leftMenuStyles.transform = "rotate(" + this.vars.rotation + "deg)";
 
       } else {
-        this.leftMenuStyles.width = "40px";
+        this.leftMenuStyles.width = "2.5em";
         this.leftMenuStyles.transform = "rotate(" + this.vars.rotation + "deg)";
       }
       this.leftMenuToggled = !this.leftMenuToggled;

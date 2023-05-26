@@ -17,10 +17,24 @@ function handleMaximizeWindow() {
     }
 }
 
+function handleResizeWindowToHome() {
+    const window = BrowserWindow.getFocusedWindow();
+    window?.setMinimumSize(1024, 720);
+    window?.setSize(1024, 720);
+}
+
+function handleResizeWindowToLogin() {
+    const window = BrowserWindow.getFocusedWindow();
+    window?.setMinimumSize(820, 520);
+    window?.setSize(820, 520);
+}
+
 export default {
     addHandlers: (ipcMain) => {
         ipcMain.handle('system:closeWindow', handleCloseApp);
         ipcMain.handle('system:minimizeWindow', handleMinimizeWindow);
         ipcMain.handle('system:maximizeWindow', handleMaximizeWindow);
+        ipcMain.handle('system:resizeWindowToHome', handleResizeWindowToHome);
+        ipcMain.handle('system:resizeWindowToLogin', handleResizeWindowToLogin);
     }
 }

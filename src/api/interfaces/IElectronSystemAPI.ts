@@ -3,5 +3,6 @@ export interface IElectronSystemAPI {
     closeWindow(): void;
     minimizeWindow(): void;
     maximizeWindow(): void;
-
+    resizeWindowToHome(): void;
+    resizeWindowToLogin(): void;
 }

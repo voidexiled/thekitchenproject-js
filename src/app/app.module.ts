@@ -29,7 +29,6 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader => new Transla
     CoreModule,
     SharedModule,
     HomeModule,
-    DetailModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {

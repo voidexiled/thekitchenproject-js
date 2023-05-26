@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.maximizeWindow = exports.minimizeWindow = exports.closeWindow = void 0;
+exports.resizeWindowToLogin = exports.resizeWindowToHome = exports.maximizeWindow = exports.minimizeWindow = exports.closeWindow = void 0;
 const electron_1 = require("electron");
 //let titlebar;
 // window.addEventListener('DOMContentLoaded', () => {
@@ -24,4 +24,12 @@ function maximizeWindow() {
     electron_1.ipcRenderer.invoke('system:maximizeWindow');
 }
 exports.maximizeWindow = maximizeWindow;
+function resizeWindowToHome() {
+    electron_1.ipcRenderer.invoke('system:resizeWindowToHome');
+}
+exports.resizeWindowToHome = resizeWindowToHome;
+function resizeWindowToLogin() {
+    electron_1.ipcRenderer.invoke('system:resizeWindowToLogin');
+}
+exports.resizeWindowToLogin = resizeWindowToLogin;
 //# sourceMappingURL=system.js.map

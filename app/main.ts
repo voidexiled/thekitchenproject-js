@@ -18,14 +18,14 @@ function createWindow(): BrowserWindow {
 
   // Create the browser window.
   win = new BrowserWindow({
-    x: 0,
-    y: 0,
+    x: size.width / 2 - 410,
+    y: size.height / 2 - 260,
     titleBarStyle: 'hidden',
     frame: false,
     autoHideMenuBar: true,
     width: 820,
     height: 520,
-    resizable: false,
+    resizable: true,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),
@@ -33,6 +33,7 @@ function createWindow(): BrowserWindow {
       contextIsolation: true,  // false if you want to run e2e test with Spectron
     },
   });
+  //win.setMinimumSize(820, 520)
   win.setIcon(image);
   win.setTitle("The Kitchen Project")
   system.addHandlers(ipcMain);
@@ -57,6 +58,7 @@ function createWindow(): BrowserWindow {
   }
   win.on('ready-to-show', function () {
     win.focus();
+    win.setMinimumSize(820, 520);
   });
 
   // Emitted when the window is closed.
