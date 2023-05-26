@@ -66,6 +66,7 @@ form {
     align-items: center;
     justify-content: center;
     text-align: center;
+    user-select: none;
 
 }
 
@@ -147,6 +148,7 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
+    user-select: none;
 }
 
 .sendButton:hover {
