@@ -105,7 +105,8 @@ $bg3: url("../../assets/2345009.jpg");
     background-color: #0F0D13;
     border-radius: 0.9375rem 0.9375rem 0rem 0rem;
     box-shadow: 0px 0px 12px 4px rgba($color: #0F0D13, $alpha: 0.6);
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 .cardButtonsContainer {
@@ -113,7 +114,7 @@ $bg3: url("../../assets/2345009.jpg");
     width: 88.48%;
     height: 14.72%;
     margin: 2% auto;
-    display: block;
+
     background-color: #0F0D13;
     border-radius: 0rem 0rem 0.9375rem 0.9375rem;
     box-shadow: 0px 0px 12px 4px rgba($color: #0F0D13, $alpha: 0.6);
@@ -123,65 +124,22 @@ $bg3: url("../../assets/2345009.jpg");
 
 .table {
     position: relative;
-    width: auto;
-    height: auto;
+    width: 55.52%;
+    height: 100%;
     margin: auto;
-    display: block;
+
     border-radius: 0.9375rem 0.9375rem 0 0;
-    overflow: hidden;
-    border: 1px solid #6750A4;
+    //overflow: hidden;
+    //border: 1px solid #6750A4;
+
     box-shadow: 0 0 12px 2px rgba($color: #6750A4, $alpha: 0.25);
 
 }
 
+.inspector {
+    position: relative;
+    width: 47.48%;
+    height: 100%;
+    margin: auto;
 
-table.blueTable {
-    width: 55.52%;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-table.blueTable td,
-table.blueTable th {
-    font-family: 'Roboto' sans-serif;
-    font-size: 14px;
-    padding: 7px 7px;
-    border-right: 0.4px solid rgba($color: #6750A4, $alpha: 1.0)
-}
-
-table.blueTable tbody td {
-    font-size: 12px;
-    color: #fff;
-    border-right: 0.4px solid rgba($color: #6750A4, $alpha: 1.0);
-    border-top: 0.4px solid rgba($color: #6750A4, $alpha: 1.0);
-    padding: 7px 7px;
-}
-
-
-table.blueTable thead {}
-
-table.blueTable thead th {
-    font-size: 15px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-table.blueTable thead th:first-child {
-    border-left: none;
-}
-
-table.blueTable tfoot td {
-    font-size: 14px;
-}
-
-table.blueTable tfoot .links {
-    text-align: right;
-}
-
-table.blueTable tfoot .links a {
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
 }
