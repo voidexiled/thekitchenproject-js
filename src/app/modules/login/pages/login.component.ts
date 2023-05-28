@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TitleBarComponent } from '../window/title-bar/title-bar.component';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   login() {
     window.electronAPI.system.resizeWindowToHome();
 
-    this.router.navigate(['/home']);
+    this.router.navigate(['/cocina']);
   }
 
 }

@@ -27,7 +27,7 @@
 
 .app-icon {
     position: absolute;
-    background-image: url("../../../assets/icons/favicon.512x512.png");
+    background-image: url("../../../../assets/icons/favicon.512x512.png");
     background-size: 100% 100%;
     top: 50%;
     left: 9px;
@@ -69,19 +69,19 @@ button {
 }
 
 .close_icon {
-    background: url("../../../assets/images/icon_close.png") no-repeat center center;
+    background: url("../../../../assets/images/icon_close.png") no-repeat center center;
     background-size: 9px 9px;
 
 }
 
 .minimize_icon {
-    background: url("../../../assets/images/icon_minimize.png") no-repeat center center;
+    background: url("../../../../assets/images/icon_minimize.png") no-repeat center center;
     background-size: 15px 15px;
     right: 80px;
 }
 
 .maximize_icon {
-    background: url("../../../assets/images/icon_maximize.png") no-repeat center center;
+    background: url("../../../../assets/images/icon_maximize.png") no-repeat center center;
     background-size: 15px 15px;
     right: 40px;
 }

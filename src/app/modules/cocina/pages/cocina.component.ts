@@ -21,11 +21,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-cocina',
+  templateUrl: './cocina.component.html',
+  styleUrls: ['./cocina.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class CocinaComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   clickedRows = new Set<PeriodicElement>();

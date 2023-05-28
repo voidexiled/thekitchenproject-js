@@ -2,15 +2,27 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './shared/components';
 
-import { HomeRoutingModule } from './home/home-routing.module';
-import { DetailRoutingModule } from './detail/detail-routing.module';
-import { LoginRoutingModule } from './login/login-routing.module';
+import { CocinaRoutingModule } from './modules/cocina/cocina-routing.module';
+import { LoginRoutingModule } from './modules/login/login-routing.module';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'login',
+  //   pathMatch: 'full'
+  // },
   {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path: 'cocina',
+    loadChildren: () => import('./modules/cocina/cocina.module').then(m => m.CocinaModule)
   },
   {
     path: '**',
@@ -21,8 +33,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {}),
-    HomeRoutingModule,
-    DetailRoutingModule,
+    CocinaRoutingModule,
     LoginRoutingModule
   ],
   exports: [RouterModule]

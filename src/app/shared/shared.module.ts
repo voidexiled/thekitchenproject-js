@@ -6,10 +6,11 @@ import { TranslateModule } from '@ngx-translate/core';
 import { PageNotFoundComponent } from './components/';
 import { WebviewDirective } from './directives/';
 import { FormsModule } from '@angular/forms';
+import { TitleBarComponent } from './components/title-bar/title-bar.component';
 
 @NgModule({
-  declarations: [PageNotFoundComponent, WebviewDirective],
+  declarations: [TitleBarComponent, PageNotFoundComponent, WebviewDirective],
   imports: [CommonModule, TranslateModule, FormsModule],
-  exports: [TranslateModule, WebviewDirective, FormsModule]
+  exports: [TitleBarComponent, TranslateModule, WebviewDirective, FormsModule]
 })
 export class SharedModule { }
