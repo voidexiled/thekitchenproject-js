@@ -11,12 +11,12 @@ import { Pedido } from '../../../../core/models/Pedido';
   imports: [MatTableModule, MatPaginatorModule]
 })
 export class CocinaTableComponent implements AfterViewInit {
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
   displayedColumns: string[] = ['npedido', 'pedido', 'mesa', 'fecha', 'hora'];
   selectedRow = new Pedido();
   dataSource = new MatTableDataSource<Pedido>(ELEMENT_DATA);
   clickedRows = new Set<Pedido>();
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
